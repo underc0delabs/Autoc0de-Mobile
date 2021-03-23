@@ -3,7 +3,7 @@
 
 
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://gitlab.com/savvyapp/automation-mobile-fivvy/-/tree/master)
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/Joel-Vitelli/Autoc0de-Mobile)
 
 ## Indice
 
@@ -65,7 +65,7 @@ The technologies mentioned above are integrated into the framework through MAVEN
 
 This Framework uses the automation pattern [Page Object] and is structured as follows.
 
-<p align="center">
+
 ```
 .
 │ .idea    
@@ -98,7 +98,6 @@ This Framework uses the automation pattern [Page Object] and is structured as fo
     ├── pom.xml -----------------------------------------> POM File of this framework
     └── testing.xml -------------------------------------> TestRunner config
 ```
-</p>
 
 <p align="center">
   <img src="img/structure.png"/>
