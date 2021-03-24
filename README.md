@@ -185,31 +185,31 @@ It is as simple as looking for it, opening it with a browser and viewing it
 
 Examples:
 <p align="center">
-```Example of dashboard of our Report```
+Example of dashboard of our Report
 </p>
 <p align="center">
   <img src="img/report1.png"/>
 </p>
 <p align="center">
-```Example of status of our steps```
+Example of status of our steps
 </p>
 <p align="center">
   <img src="img/report2.png"/>
 </p>
 <p align="center">
-```Example of a screenshot taked when the execution of test fail```
+Example of a screenshot taked when the execution of test fail
 </p>
 <p align="center">
   <img src="img/report3.png"/>
 </p>
 <p align="center">
-```Example of a exeption captured by the report```
+Example of a exeption captured by the report
 </p>
 <p align="center">
   <img src="img/report4.png"/>
 </p>
 <p align="center">
-```Example of the enviroment and system information```
+Example of the enviroment and system information
 </p>
 <p align="center">
   <img src="img/report5.png"/>
