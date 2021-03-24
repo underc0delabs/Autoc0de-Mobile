@@ -20,10 +20,10 @@ In this README.MD we will see the following topics:
 ## What can we do with this Framework
 
 - Add automated code reproducible through a virtual (or physical) mobile device (Android)
-- Automate in BDD using ** Gherkin ** language
+- Automate in BDD using **Gherkin** language
 - Obtain at the end of each execution, three types of reports **(ExtentReport, ReportePFD, Cucumber Basic Report)**
 - Use the framework's own functions to streamline repetitive tasks
-- Execution ** sequential ** (Configurable to Parallel)
+- Execution **sequential** (Configurable to Parallel)
 
 This framework is maked based on several technologies that are detailed in the next point. All open source
 
