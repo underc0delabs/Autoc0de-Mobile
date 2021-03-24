@@ -14,6 +14,7 @@ In this README.MD we will see the following topics:
 - Project architecture
 - Tools needed to run it locally and Steps to run the Framework
 - How to change the suite to be run
+- How to see a great Report
 
 ## What can we do with this Framework
 
@@ -160,6 +161,61 @@ Remember that the ```@tag``` that we are going to replace has to be identical in
 <p align="center">
   <img src="img/tag3.png"/>
 </p>
+
+## How to see a great Report
+
+If we want to see the report, prior to the execution of the project, we have to go to the "Target" folder that is automatically generated in the project structure.
+
+```
+│ .idea    
+└── src
+└── Target
+    ├── cucumber-reports -------------------> In this folder we found a basic cucumber report
+    ├── generated-test-sources
+    ├── Reports ----------------------------> in this folder we found 2 type of reports
+        ├── Autoc0de-Mobile-HTML.html ------> Greater report of Extent Report
+        ├── Autoc0de-Mobile-PDF ------------> PDF Report
+    └── test-clases
+```
+
+It is as simple as looking for it, opening it with a browser and viewing it
+
+* Extra Feature:
+    * **Screenshots**: If in our test we have errors, Autoc0de will automatically generate a screenshot at the exact moment the execution failed.
+
+Examples:
+<p align="center">
+```Example of dashboard of our Report```
+</p>
+<p align="center">
+  <img src="img/report1.png"/>
+</p>
+<p align="center">
+```Example of status of our steps```
+</p>
+<p align="center">
+  <img src="img/report2.png"/>
+</p>
+<p align="center">
+```Example of a screenshot taked when the execution of test fail```
+</p>
+<p align="center">
+  <img src="img/report3.png"/>
+</p>
+<p align="center">
+```Example of a exeption captured by the report```
+</p>
+<p align="center">
+  <img src="img/report4.png"/>
+</p>
+<p align="center">
+```Example of the enviroment and system information```
+</p>
+<p align="center">
+  <img src="img/report5.png"/>
+</p>
+
+
 
 # Enjoy!
 
