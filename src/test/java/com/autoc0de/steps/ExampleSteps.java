@@ -11,17 +11,21 @@ public class ExampleSteps {
 
     @Given("the user is on the login screen of Example App")
     public void theUserIsOnTheLoginScreenOfExampleApp() {
+        examplePage.validateLoginScreen();
     }
 
-    @When("the user enter his credentials User Name: <username> and Password <password>")
-    public void theUserEnterHisCredentialsUserNameUsernameAndPasswordPassword() {
+    @When("^the user enter his credentials User Name: (.*) and Password (.*)$")
+    public void theUserEnterHisCredentialsUserNameUsernameAndPasswordPassword(String user, String pass) {
+        examplePage.completeLoginFields(user, pass);
     }
 
     @And("the user tap the Login button")
     public void theUserTapTheLoginButton() {
+        examplePage.doClickInButton();
     }
 
-    @Then("the user verifies that he was on the Welcome to Autoc{int}de screen")
-    public void theUserVerifiesThatHeWasOnTheWelcomeToAutocDeScreen(int arg0) {
+    @Then("the user verifies that he was on the Welcome to Autoc0de screen")
+    public void theUserVerifiesThatHeWasOnTheWelcomeToAutocDeScreen() {
+        examplePage.validateCorrectLogin();
     }
 }

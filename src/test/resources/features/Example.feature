@@ -7,6 +7,6 @@ Feature: Basic Login
     And the user tap the Login button
     Then the user verifies that he was on the Welcome to Autoc0de screen
     Examples:
-      | username        | password        |
-      | validUsername   | validPassword   |
-      | noValidUsername | noValidPassword |
+      | username                | password         |
+      | validUsername@gmail.com | validPassword156 |
+      | noValidUsername         | noValidPassword  |
