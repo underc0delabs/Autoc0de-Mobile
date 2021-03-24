@@ -15,6 +15,7 @@ In this README.MD we will see the following topics:
 - Tools needed to run it locally and Steps to run the Framework
 - How to change the suite to be run
 - How to see a great Report
+- How to configurate Autoc0de for your app
 
 ## What can we do with this Framework
 
@@ -215,6 +216,23 @@ Example of the enviroment and system information
   <img src="img/report5.png"/>
 </p>
 
+# How to configurate Autoc0de for your app
+
+If you want to use this Framework to automate your own mobile application (of course), you only have to follow the steps that I leave you below. Let's go to that
+
+1. The first thing you have to do is add the ru .apk file inside the ```apps``` folder. You can remove the app from ```Autoc0de.apk``` if you prefer.
+
+<p align="center">
+  <img src="img/changeApk.png"/>
+</p>
+
+2. Then, you have to replace the name of the ```.apk``` file set in the app property of the Cappabilities. For this, we go to the ```Hook.class``` file and change the name as seen in the following image
+
+<p align="center">
+  <img src="img/apk.png"/>
+</p>
+
+3. And that's it. Now all you have to do is write your .feature file, define the steps and the functions that you will need to automate your test cases
 
 
 # Enjoy!
