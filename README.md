@@ -165,7 +165,7 @@ Remember that the ```@tag``` that we are going to replace has to be identical in
 
 ## How to see a great Report
 
-If we want to see the report, prior to the execution of the project, we have to go to the "Target" folder that is automatically generated in the project structure.
+If we want to see the report, prior to the execution of the project, we have to go to the ```Target``` folder that is automatically generated in the project structure.
 
 ```
 │ .idea    
