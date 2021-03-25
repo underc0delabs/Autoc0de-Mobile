@@ -139,7 +139,7 @@ At this time we should be running the automatic tests on our Pixel 3 virtual dev
 
 
 
-## How to change the sweep that is going to be executed
+## How to change the Suite that is going to be executed
 
 To change the scenario we want to run, we have to modify the ```@Tag``` of [Cucumber] in the file ```TestRunner``` and in the file ```Hook``` as indicated in the following images:
 
