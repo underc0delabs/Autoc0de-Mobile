@@ -111,9 +111,9 @@ This Framework uses the automation pattern [Page Object] and is structured as fo
 </p>
 
 This project is based on 3 levels:
-* Page objects (They are all our pages that in this case, are in the folder ```pages```)
-* Step definitions (They are all the definitions of our steps written in [Gherkin], in this case, in the folder ```steps```)
-* Features (These are all our .features files written in [Gherkin], in this case, in the folder ```features```)
+* **Page objects** (They are all our pages that in this case, are in the folder ```pages```)
+* **Step definitions** (They are all the definitions of our steps written in [Gherkin], in this case, in the folder ```steps```)
+* **Features** (These are all our .features files written in [Gherkin], in this case, in the folder ```features```)
 
 
 
@@ -129,7 +129,7 @@ In the ```Technological Stack``` section, we will find links that will take us t
 1. Install Maven 3.6.3
 2. Install Java and JDK
 3. Expose Maven and Java in environment variables
-4. Install Appium desktop
+4. Install Appium desktop, Run int and set in port this local host ip adress: ```127.0.0.1``` and the port is ```4723```
 5. Install Android studio, and create a new virtual device Pixel 3
 6. Inside the root path of the newly cloned project, open the console and execute the following maven command: ```mvn install```. This will download all the necessary dependencies found in the ```pom.xml``` file
 
