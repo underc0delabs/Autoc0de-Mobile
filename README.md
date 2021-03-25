@@ -220,7 +220,7 @@ Example of the enviroment and system information
 
 If you want to use this Framework to automate your own mobile application (of course), you only have to follow the steps that I leave you below. Let's go to that
 
-1. The first thing you have to do is add the ru .apk file inside the ```apps``` folder. You can remove the app from ```Autoc0de.apk``` if you prefer.
+1. The first thing you have to do is add your .apk file inside the ```apps``` folder. You can remove the app from ```Autoc0de.apk``` if you prefer.
 
 <p align="center">
   <img src="img/changeApk.png"/>
@@ -232,7 +232,18 @@ If you want to use this Framework to automate your own mobile application (of co
   <img src="img/apk.png"/>
 </p>
 
-3. And that's it. Now all you have to do is write your .feature file, define the steps and the functions that you will need to automate your test cases
+3. Now, what we will do is place the ```Capabilities``` of our ```.apk```. To do this, we have to replace the following properties, by the properties of your apk:
+   * ```appPackage```: name of the pakage ot your app
+   * ```appActivity```: in some cases this is'n necesary to set 
+   
+   More information in the next image:
+   
+<p align="center">
+  <img src="img/apk2.png"/>
+</p>
+   
+
+4. And that's it. Now all you have to do is write your .feature file, define the steps and the functions that you will need to automate your test cases
 
 
 # Enjoy!
