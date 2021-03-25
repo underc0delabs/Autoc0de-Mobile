@@ -18,7 +18,7 @@
         </developer>
     </developers>
 
-    <groupId>org.autoc0de.mobile</groupId>
+    <groupId>com.autoc0de</groupId>
     <artifactId>Autoc0de-Mobile</artifactId>
     <version>1.0-SNAPSHOT</version>
 
