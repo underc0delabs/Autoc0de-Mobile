@@ -39,7 +39,7 @@ This Framework includes the following technologies:
 - [Gherkin] - Tool that allows us to generate tests scripts using tests cases written in Gherkin **(Files.feature)**.
 - [Extent Report] - Intuitive reporter and very nice to look at.
 - [TestNG] - Automation tool that will allow us to create Runners and use notations.
-- [Android Studio AVD] - Necessary for creating virtual devices (Create Pixel 8 to run this suite).
+- [Android Studio AVD] - Necessary for creating virtual devices (Create Pixel 3 to run this suite).
 
 **IDE recommended**
 - [IntelliJ] - Excellent Ide for automation development
@@ -125,14 +125,14 @@ In the ```Technological Stack``` section, we will find links that will take us t
 2. Install Java and JDK
 3. Expose Maven and Java in environment variables
 4. Install Appium desktop
-5. Install Android studio, and create a new virtual device Pixel 8
+5. Install Android studio, and create a new virtual device Pixel 3
 6. Inside the root path of the newly cloned project, open the console and execute the following maven command: ```mvn install```. This will download all the necessary dependencies found in the ```pom.xml``` file
 
 Once we have everything we need installed, to run the project we have 2 options:
 * Inside the project with an ide (IntelliJ for example), select the file ```TestRunner.class```, right click on it, option "Debug"
 * Open console within the path of the newly cloned project and execute the following maven command ```mvn clean install tests```
 
-At this time we should be running the automatic tests on our Pixel 8 virtual device
+At this time we should be running the automatic tests on our Pixel 3 virtual device
 
 7. When the execution finishes, we go to the folder ```target / Reports``` where we will find the ExtentReport report called``` Autoc0de-Mobile-HTML.html``` and the PDF report called ```Autoc0de-Mobile-PDF.pdf```
 8. Finally, if we wish, we execute the maven command ```mvn clean``` to delete the folder ```target``` and all its content
