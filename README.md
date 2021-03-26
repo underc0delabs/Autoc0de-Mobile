@@ -29,7 +29,6 @@ In this README.MD we will see the following topics:
 
 ## Features to add in the future
 
-- Change the @Tag for Suites in only one place
 - Dockerize the framework to run it in a container, using volumes
 
 This framework is maked based on several technologies that are detailed in the next point. All open source
