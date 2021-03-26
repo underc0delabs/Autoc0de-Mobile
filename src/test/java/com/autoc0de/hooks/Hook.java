@@ -19,7 +19,7 @@ public class Hook {
     File appDir = new File(filePath, "src/test/resources/apps");
     File app = new File(appDir, "Autoc0de.apk");
 
-    @Before("@ExampleTag")
+    @Before
     public void setUp() throws MalformedURLException {
         //CAPABILITIES
         DesiredCapabilities caps = new DesiredCapabilities();

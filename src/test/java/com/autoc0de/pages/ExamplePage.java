@@ -1,7 +1,6 @@
 package com.autoc0de.pages;
 
 import io.appium.java_client.MobileBy;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import tests.MasterPage;
 
