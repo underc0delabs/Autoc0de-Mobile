@@ -1,7 +1,9 @@
 # Autoc0de: Automation Framework - Mobile 
 ## _Open source tests automation framework for mobile devices_
 
-
+<p align="center">
+  <img src="img/autoc0de.png"/>
+</p>
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/Joel-Vitelli/Autoc0de-Mobile)
 
@@ -146,13 +148,7 @@ At this time we should be running the automatic tests on our Pixel 3 virtual dev
 
 ## How to change the Suite that is going to be executed
 
-To change the scenario we want to run, we have to modify the ```@Tag``` of [Cucumber] in the file ```TestRunner``` and in the file ```Hook``` as indicated in the following images:
-
-```File Hook.class```
-
-<p align="center">
-  <img src="img/tag1.png"/>
-</p>
+To change the scenario we want to run, we have to modify the ```@Tag``` of [Cucumber] in the file ```TestRunner``` indicated in the following images:
 
 ```File TestRunner.class```
 
