@@ -153,7 +153,7 @@ To change the scenario we want to run, we have to modify the ```@Tag``` of [Cucu
 ```File TestRunner.class```
 
 <p align="center">
-  <img src="img/tag2.png"/>
+  <img src="img/tag1.png"/>
 </p>
 
 Remember that the ```@tag``` that we are going to replace has to be identical in both files, and it has to exist within the feature that we want to execute, for example:
