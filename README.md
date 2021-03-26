@@ -7,7 +7,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/Joel-Vitelli/Autoc0de-Mobile)
 
-## Indice
+# Indice
 
 In this README.MD we will see the following topics:
 
@@ -217,7 +217,7 @@ Example of the enviroment and system information
   <img src="img/report5.png"/>
 </p>
 
-# How to configurate Autoc0de for your app
+## How to configurate Autoc0de for your app
 
 If you want to use this Framework to automate your own mobile application (of course), you only have to follow the steps that I leave you below. Let's go to that
 
