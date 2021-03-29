@@ -75,8 +75,7 @@ This Framework uses the automation pattern [Page Object] and is structured as fo
 
 
 ```
-.
-│ .idea    
+.   
 └── src
     ├── main
     │   ├── java
@@ -168,7 +167,7 @@ Remember that the ```@tag``` that we are going to replace has to be identical in
 If we want to see the report, prior to the execution of the project, we have to go to the ```Target``` folder that is automatically generated in the project structure.
 
 ```
-│ .idea    
+.  
 └── src
 └── Target
     ├── cucumber-reports -------------------> In this folder we found a basic cucumber report
