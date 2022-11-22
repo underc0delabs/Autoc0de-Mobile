@@ -1,6 +1,6 @@
 package com.autoc0de.pages;
 
-import io.appium.java_client.MobileBy;
+import io.appium.java_client.AppiumBy;
 import org.testng.Assert;
 import tests.MasterPage;
 
@@ -21,21 +21,21 @@ public class ExamplePage extends MasterPage {
 
     //FUNCTIONS
     public void validateLoginScreen(){
-        Assert.assertTrue(auto_isElementVisible(MobileBy.AccessibilityId(TITLE_LABEL_ACCESIBILITY_ID)));
+        Assert.assertTrue(auto_isElementVisible(AppiumBy.accessibilityId(TITLE_LABEL_ACCESIBILITY_ID)));
     }
 
     public void completeLoginFields(String user, String pass){
-        auto_setTextToInput(MobileBy.AccessibilityId(USER_INPUT_ACCESIBILITY_ID), user);
-        auto_setTextToInput(MobileBy.AccessibilityId(PASS_INPUT_ACCESIBILITY_ID), pass);
+        auto_setTextToInput(AppiumBy.accessibilityId(USER_INPUT_ACCESIBILITY_ID), user);
+        auto_setTextToInput(AppiumBy.accessibilityId(PASS_INPUT_ACCESIBILITY_ID), pass);
     }
 
     public void doClickInButton(){
-        auto_setTapElement(MobileBy.AccessibilityId(BUTTON_ACCESIBILITY_ID));
+        auto_setTapElement(AppiumBy.accessibilityId(BUTTON_ACCESIBILITY_ID));
     }
 
     public void validateCorrectLogin(){
-        Assert.assertTrue(auto_isElementVisible(MobileBy.AccessibilityId(RESULT_LABEL_ACCESIBILITY_ID)), "The logged in messaje is not displayed");
-        Assert.assertEquals(auto_getElementText(MobileBy.AccessibilityId(RESULT_LABEL_ACCESIBILITY_ID)), "Your are Logged in!", "Incorrect login");
+        Assert.assertTrue(auto_isElementVisible(AppiumBy.accessibilityId(RESULT_LABEL_ACCESIBILITY_ID)), "The logged in messaje is not displayed");
+        Assert.assertEquals(auto_getElementText(AppiumBy.accessibilityId(RESULT_LABEL_ACCESIBILITY_ID)), "Your are Logged in!", "Incorrect login");
     }
 
 }

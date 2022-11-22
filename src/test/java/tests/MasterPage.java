@@ -1,7 +1,6 @@
 package tests;
 
 import com.autoc0de.utility.Utils;
-import io.appium.java_client.MobileBy;
 import com.autoc0de.hooks.Hook;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
@@ -32,13 +31,13 @@ public class MasterPage extends Hook {
 
     public MasterPage() {
         this.driver = Hook.getDriver();
-        this.wait = new WebDriverWait(getDriver(), 30);
+        this.wait = new WebDriverWait(getDriver(), Duration.ofSeconds(30));
         this.fluentWait = new FluentWait<RemoteWebDriver>(this.driver).withTimeout(Duration.ofSeconds(30)).pollingEvery(Duration.ofSeconds(10)).ignoring(Exception.class);
     }
 
 
     public WebDriverWait auto_getWait() {
-        return this.wait = new WebDriverWait(driver, 30);
+        return this.wait = new WebDriverWait(driver, Duration.ofSeconds(30));
     }
 
     public Wait<RemoteWebDriver> auto_getFluentWait() {
@@ -249,17 +248,6 @@ public class MasterPage extends Hook {
 
     }
 
-    public void auto_scrollToElementByResourceId(String id) {
-        String uiSelector = "new UiSelector().resourceId(\"" + id + "\")";
-        String command = "new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(" + uiSelector + ");";
-        this.driver.findElement(MobileBy.AndroidUIAutomator(command));
-    }
-
-    public void auto_scrollToElementByAccessibilityId(String accessibilityId) {
-        String uiSelector = "new UiSelector().description(\"" + accessibilityId + "\")";
-        String command = "new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(" + uiSelector + ");";
-        this.driver.findElement(MobileBy.AndroidUIAutomator(command));
-    }
 
     public void auto_setTextToInput(WebElement element, String value, String placeholder) {
         if (!Utils.isTextFieldEmpty(element, placeholder)) {
@@ -272,13 +260,6 @@ public class MasterPage extends Hook {
     public void auto_setTextToInput(By locator, String value, String placeholder) {
         WebElement element = this.auto_getWebElement(locator);
         this.auto_setTextToInput(element, value, placeholder);
-    }
-
-    public void auto_selectOptionSpinner(String option) {
-        String uiSelector = "new UiSelector().textContains(\"" + option + "\")";
-        String command = "new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(" + uiSelector + ");";
-        WebElement element = this.driver.findElement(MobileBy.AndroidUIAutomator(command));
-        this.auto_setTapElement(element);
     }
 
 }
