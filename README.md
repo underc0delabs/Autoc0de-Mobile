@@ -49,6 +49,7 @@ This Framework includes the following technologies:
 
 **IDE recommended**
 - [IntelliJ] - Excellent Ide for automation development
+- [AQua] - Best Ide for automation development
 
 **Recommended plugins for IntelliJ**
 - **Gherkin**
@@ -60,12 +61,14 @@ The technologies mentioned above are integrated into the framework through MAVEN
 | Technology | Maven version |Link Maven repo|
 | ------ | ------ |------|
 | Selenium-java | 3.141.59|https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java|
-| TestNG maven | 7.4.0 |https://mvnrepository.com/artifact/org.testng/testng|
-| Cucumber-java | 6.10.2 |https://mvnrepository.com/artifact/io.cucumber/cucumber-java|
-| Cucumber-testng | 6.10.2 |https://mvnrepository.com/artifact/io.cucumber/cucumber-testng|
-| Cucumber-core | 6.10.2 |https://mvnrepository.com/artifact/io.cucumber/cucumber-core|
-| Appium Java-client | 7.5.0 |https://mvnrepository.com/artifact/io.appium/java-client|
-| Extent Report Adapter | 2.7.0 |https://mvnrepository.com/artifact/com.aventstack/extentreports|
+| TestNG maven | 7.6.1 |https://mvnrepository.com/artifact/org.testng/testng|
+| Cucumber-java | 7.8.1 |https://mvnrepository.com/artifact/io.cucumber/cucumber-java|
+| Cucumber-testng | 7.8.1 |https://mvnrepository.com/artifact/io.cucumber/cucumber-testng|
+| Cucumber-core | 7.8.1 |https://mvnrepository.com/artifact/io.cucumber/cucumber-core|
+| Appium Java-client | 8.2.0 |https://mvnrepository.com/artifact/io.appium/java-client|
+| Extent Report Adapter 7 | 1.9.0 |https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter|
+| ExtentReport | 5.9.0 | https://mvnrepository.com/artifact/com.aventstack/extentreports|
+| Lombok | 1.18.24 | https://mvnrepository.com/artifact/org.projectlombok/lombok|
 
 **Remember to keep these versions of Maven up to date as much as possible. If the project ever stops working, it could be because one of the versions found here has been deprecated / moved. However, it must be remembered that at the date this project was uploaded, all versions are the most current**
 
@@ -121,8 +124,8 @@ This project is based on 3 levels:
 
 In the ```Technological Stack``` section, we will find links that will take us to the websites to download all the tools we need. However, when using maven, we only need to install:
 * Maven 3.6.3
-* Java
-* JDK
+* Java 
+* JDK > 8 (Recomended 14)
 * Appium desktop
 * Virtual device (Android Studio AVD, Genexus, etc.)
 
