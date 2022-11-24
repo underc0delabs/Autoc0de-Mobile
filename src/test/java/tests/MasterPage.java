@@ -31,13 +31,13 @@ public class MasterPage extends Hook {
 
     public MasterPage() {
         this.driver = Hook.getDriver();
-        this.wait = new WebDriverWait(getDriver(), Duration.ofSeconds(30));
+        this.wait = new WebDriverWait(getDriver(),(30));
         this.fluentWait = new FluentWait<RemoteWebDriver>(this.driver).withTimeout(Duration.ofSeconds(30)).pollingEvery(Duration.ofSeconds(10)).ignoring(Exception.class);
     }
 
 
     public WebDriverWait auto_getWait() {
-        return this.wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        return this.wait = new WebDriverWait(driver,(30));
     }
 
     public Wait<RemoteWebDriver> auto_getFluentWait() {
