@@ -65,7 +65,7 @@ The technologies mentioned above are integrated into the framework through MAVEN
 | Cucumber-java | 7.8.1 |https://mvnrepository.com/artifact/io.cucumber/cucumber-java|
 | Cucumber-testng | 7.8.1 |https://mvnrepository.com/artifact/io.cucumber/cucumber-testng|
 | Cucumber-core | 7.8.1 |https://mvnrepository.com/artifact/io.cucumber/cucumber-core|
-| Appium Java-client | 8.2.0 |https://mvnrepository.com/artifact/io.appium/java-client|
+| Appium Java-client | 7.6.0 |https://mvnrepository.com/artifact/io.appium/java-client|
 | Extent Report Adapter 7 | 1.9.0 |https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter|
 | ExtentReport | 5.9.0 | https://mvnrepository.com/artifact/com.aventstack/extentreports|
 | Lombok | 1.18.24 | https://mvnrepository.com/artifact/org.projectlombok/lombok|
