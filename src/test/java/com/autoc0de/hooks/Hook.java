@@ -1,13 +1,16 @@
 package com.autoc0de.hooks;
 
 
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.cucumber.java.*;
 import io.cucumber.java.Scenario;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.*;
 import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -38,18 +41,20 @@ public class Hook {
         //URL APPIUM SERVER
         URL url = new URL("http://127.0.0.1:4723/wd/hub");
         //DRIVERS
-        driver = new AndroidDriver(url, caps);
+        driver = new AndroidDriver<>(url, caps);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 
     @After
-    public void tearDown(Scenario s){
+    public void tearDown(Scenario s) throws IOException {
 
         if(s.isFailed()) {
-            final byte[] screenshot = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.BYTES);
-
-            s.attach(screenshot, "image/jpg", s.getName());
-
+            try {
+                final byte[] screenshot = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.BYTES);
+                s.attach(screenshot, "image/png", s.getName());
+            } catch (Exception e){
+                getDriver().quit();
+            }
         }
         getDriver().quit();
     }
